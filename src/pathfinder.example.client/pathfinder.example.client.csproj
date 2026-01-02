@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\pathfinder.example.ServiceDefaults\pathfinder.example.ServiceDefaults.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Akka.Pathfinder.Proto" Version="0.1.0" />
+        <PackageReference Include="Akka.Pathfinder.DemoLayout" Version="0.1.0" />
+        <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="10.1.0"/>
+        <PackageReference Include="Servus.Core" Version="0.33.2"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1"/>
+        <PackageReference Include="Grpc.Net.ClientFactory" Version="2.76.0" />
+        <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="10.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+</Project>
