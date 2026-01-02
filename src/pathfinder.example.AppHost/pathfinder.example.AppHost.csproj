@@ -1,0 +1,23 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.0.0">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UserSecretsId>4d3c58d8-26f8-413b-af68-371496829d05</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="13.1.0"/>
+        <PackageReference Include="Aspire.Hosting.MongoDB" Version="13.1.0"/>
+        <PackageReference Include="Aspire.Hosting.Redis" Version="13.1.0"/>
+        <PackageReference Include="moin.aspire.hosting.akka" Version="0.1.1"/>
+        <PackageReference Include="Servus.Core" Version="0.33.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\pathfinder.example.client\pathfinder.example.client.csproj"/>
+    </ItemGroup>
+
+</Project>
